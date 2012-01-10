@@ -1,0 +1,43 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<title>jQuery Inline Field Label Plugin Demo</title>
+	<style>
+		body, input, textarea { font-family:sans-serif; }
+		a { display:block; }
+		input { width:10em; }
+		.inlineFieldLabelValue { color:#AAA; font-style:italic; }
+	</style>
+</head>
+
+<body>
+
+<p>Simple demonstration of jQuery Inline Field Label Plugin. <a href="http://github.com/eliasdawson/jQuery-Inline-Field-Label-Plugin">http://github.com/eliasdawson/jQuery-Inline-Field-Label-Plugin</a></p>
+<form>
+	<div>
+		<label for="textField">Username</label>
+		<input id="textField" type="text">
+	</div>
+	<div>
+		<label for="passwordField">Password</label>
+		<input id="passwordField" type="password">
+	</div>
+	<div>
+		<label for="areaField">Comments</label>
+		<textarea id="areaField"></textarea>
+	</div>
+</form>
+  
+<script src="jquery.min.js"></script>
+<script src="jquery-inlinefieldlabel-min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("label").inlineLabel();
+    });
+
+</script>
+
+</body>
+
+</html>
