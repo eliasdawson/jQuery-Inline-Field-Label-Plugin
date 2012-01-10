@@ -1,33 +1,47 @@
 jQuery Inline Field Label Plugin
 
+------------
 Description:
+------------
 The jQuery Inline Field Label Plugin is a simple jQuery plugin to display
 HTML label tags within their corresponding input fields. The primary
 benefit is that it allows this form of display while maintaining
 correct, semantic markup.
 
+--------------
 Functionality:
+--------------
 Hides label element and moves the text of the label to the value property
 of the input element indicated by the "for" attribute of the label. On
 focus on the input element, the value is removed. On blur the label text
 is restored if the field is left blank. In addition a CSS class is applied
 to the field when the label text is present for styling.
 
+------------
 Limitations:
+------------
 Only works on <label> tags associated with <input> tags of type "text" or "password" using the "for" attribute.
 
+------
 Usage:
+------
 $(selector).inlineLabel();
 
 Where selector is a jQuery selector indicating a label element with a "for" attribute containing the id of an input element on the page of type "text" or "password".
 
+-------
 Author:
+-------
 Elias Dawson
 
+----------------
 Github Location:
+----------------
 https://github.com/eliasdawson/jQuery-Inline-Field-Label-Plugin
 
+----------------------
 License and Copyright:
+----------------------
 Copyright (C) 2012 Elias Dawson
 
 For licensing information, please see file named LICENSE
